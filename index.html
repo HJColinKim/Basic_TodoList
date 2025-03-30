@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">To-Do List</h1>
+    <div class="todo-form">
+      <input type="text" id="todoInput" placeholder="Add a new task..." />
+      <button id="addButton">Add</button>
+    </div>
+
+    <!-- Box to display all tasks -->
+    <div class="task-box">
+      <h2>Your Tasks:</h2>
+      <ul id="todoList" class="todo-list"></ul>
+    </div>
+  </div>
+
+  <!-- Error message -->
+  <div id="toast" class="toast">Please enter a valid task!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
