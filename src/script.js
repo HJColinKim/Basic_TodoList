@@ -20,7 +20,7 @@ function createNewButton(){
     const newButton = document.createElement("button");
 
     newButton.textContent = "Completed Task "
-    newButton.classList.add('btn-styling')
+    newButton.classList.add('btn-styling')  
 
     taskBox.appendChild(newButton);
     
