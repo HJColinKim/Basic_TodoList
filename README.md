@@ -12,6 +12,7 @@ Functionality is very simple, users can use mouse to add new tasks or press ente
 
 The site utilizes non-intrusive toast pop-ups for errors, and the site has a music functionality for users to listen to calm, relaxing music. 
 The site's visuals and music feature is catered towards a home/dashboard feel. 
+Music Credit: Rain on Brick - Bill Kiley https://www.youtube.com/watch?v=-9s63ZNKSzg&ab_channel=BillKiley-Topic
 
 FEATURES UNDER CURRENT WORK: Adding a memory system so tasks can be saved after site is closed. 
 
