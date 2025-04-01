@@ -6,7 +6,6 @@ let arrayOfTasks = [];
 const taskBox = document.querySelector('.task-box');
 let score = 0;
 
-
 //Music handler 
 let audio = document.getElementById("music");
 

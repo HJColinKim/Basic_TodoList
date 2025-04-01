@@ -190,7 +190,7 @@
 
 /* Hover effect */
 .btn-styling:hover {
-    background-color: #45a049; /* Slightly darker green */
+    background-color: #e274e7; /* Slightly darker green */
     transform: scale(1.05); /* Slightly increase size */
 }
 
