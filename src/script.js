@@ -4,6 +4,22 @@ const addButton = document.getElementById("addButton");
 const inputField = document.getElementById("todoInput");
 let arrayOfTasks = [];
 const taskBox = document.querySelector('.task-box');
+let score = 0;
+
+
+//Music handler 
+let audio = document.getElementById("music");
+
+function musicControl(){
+    if (audio.paused){
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
+    
+
 
 function toastPopup(){
     const toast = document.getElementById('toast');
@@ -17,22 +33,39 @@ function toastPopup(){
 }
 
 function createNewButton(){
-    const newButton = document.createElement("button");
+    let newButton = document.createElement("button");
 
-    newButton.textContent = "Completed Task "
-    newButton.classList.add('btn-styling')  
+    newButton.id = `button-${arrayOfTasks.length}`;
+    newButton.textContent = "完了"
+    newButton.classList.add('btn-styling'); 
+
+
 
     taskBox.appendChild(newButton);
+
+    newButton.addEventListener("click", function(){
+        let taskId = newButton.id.replace("button-", "task-");
+
+        document.getElementById(newButton.id).remove();
+        document.getElementById(taskId).remove();
+
+        arrayOfTasks.pop(); //Removes task from array. 
+        score++; 
+
+        document.querySelector(".scoreboard").textContent = `Streaks: ${score} ${score>10 ? "🔥" : ""}`;
+    })
     
 }
 
-addButton.addEventListener("click", function(){
+function createTask(){
     const newTask = inputField.value;
-    arrayOfTasks += newTask; 
+    arrayOfTasks.push(newTask); 
 
     inputField.value = "";
     let newElement = document.createElement("p");
-    
+
+
+    newElement.id = `task-${arrayOfTasks.length}`;
     newElement.textContent = newTask;
 
     if (newTask.trim() === ""){
@@ -43,5 +76,16 @@ addButton.addEventListener("click", function(){
     taskBox.appendChild(newElement);
 
     createNewButton();
+}
 
-});
+addButton.addEventListener("click", createTask);
+document.addEventListener("keypress", function(event){
+    if (event.key ==="Enter"){
+        createTask();
+    }
+})
+
+
+
+
+
