@@ -78,11 +78,8 @@ function createTask(){
     createNewButton();
 }
 
-<<<<<<< HEAD
 addButton.addEventListener("click", createTask);
-=======
-addButton.addEventListener("click", createTask());
->>>>>>> d62244d7635e6f5a9b7034343790b2a93fb38965
+//Both clicking and pressing enter will work 
 document.addEventListener("keypress", function(event){
     if (event.key ==="Enter"){
         createTask();
