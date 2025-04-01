@@ -20,7 +20,7 @@ function musicControl(){
 
     
 
-
+//Error popup 
 function toastPopup(){
     const toast = document.getElementById('toast');
     toast.classList.add("show");

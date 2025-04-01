@@ -53,7 +53,7 @@
   }
   
   .todo-form input:focus {
-    border-color: #0056b3;
+    border-color: #e38eeb;
   }
   
 
@@ -70,7 +70,7 @@
 
   .todo-form button {
     width: 15%;
-    background-color: #0056b3;
+    background-color: #e29cd9;
     color: white;
     padding: 10px;
     border: none;
@@ -80,7 +80,7 @@
   }
   
   .todo-form button:hover {
-    background-color: #003f7d;
+    background-color: #ec86ca;
   }
   
   /* Task Box */
@@ -178,7 +178,7 @@
 .btn-styling {
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #4CAF50; /* Green background */
+    background-color: #eba4de; /* Green background */
     color: white; /* White text */
     border: none; /* Remove border */
     border-radius: 8px; /* Rounded corners */
