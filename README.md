@@ -14,5 +14,5 @@ The site utilizes non-intrusive toast pop-ups for errors, and the site has a mus
 The site's visuals and music feature is catered towards a home/dashboard feel. 
 Music Credit: Rain on Brick - Bill Kiley https://www.youtube.com/watch?v=-9s63ZNKSzg&ab_channel=BillKiley-Topic
 
-FEATURES UNDER CURRENT WORK: Adding a memory system so tasks can be saved after site is closed. 
+
 
